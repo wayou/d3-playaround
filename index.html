@@ -1,18 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
-        <link rel="stylesheet" href="styles/main.css">
+        <meta name="description" content="HTML5 Audio Spectrum Visualizer">
+        <title>HTML5 3D Audio visualizer Built with ThreeJS</title>
+        <link type="text/css" rel="stylesheet" href="style/flash.min.css">
+        <link type="text/css" rel="stylesheet" href="style/style.css">
     </head>
     <body>
-        <p>hello</p>
-        <p>hello</p>
-      
-        <script src="scripts/d3.min.js"></script>
-        <script src="scripts/app.js"></script>
+        <div id="wrapper">
+            <div id="container"></div>
+            <audio id='audio' controls  src='./sources/sample.mp3'>!browser not support :(</audio>
+        </div>
+        <script type="text/javascript" src="js/pace.min.js"></script>
+        <script type="text/javascript" src="js/dat.gui.min.js"></script>
+        <script type="text/javascript" src="js/d3.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46794744-6', 'wayou.github.io');
+  ga('send', 'pageview');
+
+</script>
     </body>
 </html>
